@@ -7,6 +7,7 @@
 
 import Foundation
 
+//char[] thirdGreeting := "third!"
 print("Hello, World!")
 print("I second that greeting!")
 
