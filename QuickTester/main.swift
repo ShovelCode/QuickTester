@@ -19,3 +19,6 @@ if isLoggedIn {
 } else {
     print("Logged off.")
 }
+
+//ternary operator
+isLoggedIn ? print("Logged in") : print("logged off")
