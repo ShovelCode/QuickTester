@@ -16,4 +16,6 @@ print(greeting1 + " " + greeting2 + " " + greeting3)
 
 if isLoggedIn {
     print("Logged in.")
-}//endif
+} else {
+    print("Logged off.")
+}
