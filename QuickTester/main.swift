@@ -22,3 +22,25 @@ if isLoggedIn {
 
 //ternary operator
 isLoggedIn ? print("Logged in") : print("logged off")
+
+
+//make into a function
+var secretIdentity = "Tony Stark"
+var superheroName: String
+
+// Write your code below
+
+switch secretIdentity {
+  case "Tony Stark":
+    superheroName = "Iron Man"
+  case "Natasha Romanoff":
+    superheroName = "Black Widow"
+  case "Prince T'Challa":
+    superheroName = "Black Panther"
+  case "Thor":
+    superheroName = "Thor"
+  default:
+    superheroName = "Unknown"
+}
+
+print(superheroName)
