@@ -63,7 +63,6 @@ print(villain)
 //new function
 var planet = "Earth"
 
-// Write your code below 🪐
 switch planet {
   case "Earth", "Mercury", "Venus", "Mars" : print("Terrestrial Planet")
   case "Saturn", "Jupiter", "Uranus", "Neptune": print("Jovian planet")
@@ -72,8 +71,6 @@ switch planet {
 
 //new function
 var wholeNumber = 15
-
-// Write your code below
 
 switch wholeNumber {
   case let x where x % 2 == 0:
