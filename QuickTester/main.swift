@@ -70,6 +70,7 @@ switch planet {
 }
 
 //new function
+func determinePrimality() -> Void {
 var wholeNumber = 15
 
 switch wholeNumber {
@@ -79,6 +80,7 @@ switch wholeNumber {
     print("Composite")
 
     default: print("Prime")
+}
 }
 
 func testBools() -> Void {
@@ -101,4 +103,10 @@ func runNums() -> Void {
     }
 }
 
-testBools()
+// Write your code below 💪
+func findBMI() -> Double {
+    var weight: Double = 70.0 //kg
+    var height: Double = 2//meters
+  return weight/(height*height)
+}
+
