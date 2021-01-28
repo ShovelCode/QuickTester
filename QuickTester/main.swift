@@ -92,3 +92,13 @@ let bool3 = !(false && true) && (false || false)
 print(bool1) // should be true
 print(bool2) // should be true
 print(bool3) // should be false
+
+
+//runNums()
+
+func runNums() -> Void {
+    //new function
+    for num in 1...3 {
+      print(num)
+    }
+}
