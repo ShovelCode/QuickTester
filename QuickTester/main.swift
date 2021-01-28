@@ -81,20 +81,18 @@ switch wholeNumber {
     default: print("Prime")
 }
 
-//new function
-let bool1 = (true || false) || false || false
+func testBools() -> Void {
+    let bool1 = (true || false) || false || false
 
-let bool2 = !true || (false && false || true)
+    let bool2 = !true || (false && false || true)
 
-let bool3 = !(false && true) && (false || false)
-
-
-print(bool1) // should be true
-print(bool2) // should be true
-print(bool3) // should be false
+    let bool3 = !(false && true) && (false || false)
 
 
-//runNums()
+    print(bool1) // should be true
+    print(bool2) // should be true
+    print(bool3) // should be false
+}
 
 func runNums() -> Void {
     //new function
@@ -102,3 +100,5 @@ func runNums() -> Void {
       print(num)
     }
 }
+
+testBools()
