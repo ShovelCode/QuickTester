@@ -116,3 +116,18 @@ func findRemainder(dividend: Int, divisor: Int) -> Int {
 }
 
 print(findRemainder(dividend: 10,divisor: 4))
+
+//inout example
+var currentGeneratorState = "Off"
+
+// Write your code below 💡
+func generators(powerOutage: Bool, state: inout String ) -> Void {
+ if powerOutage {
+   state = "On"
+ } else {
+ state = "Off"
+ }
+}
+generators(powerOutage: true,        state: &currentGeneratorState)
+
+print(currentGeneratorState)
