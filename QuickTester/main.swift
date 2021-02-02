@@ -61,12 +61,15 @@ switch episode{
 print(villain)
 
 //new function
+
+func findPlanet() -> Void {
 var planet = "Earth"
 
-switch planet {
-  case "Earth", "Mercury", "Venus", "Mars" : print("Terrestrial Planet")
-  case "Saturn", "Jupiter", "Uranus", "Neptune": print("Jovian planet")
-  default : print("Unknown planet")
+    switch planet {
+      case "Earth", "Mercury", "Venus", "Mars" : print("Terrestrial Planet")
+      case "Saturn", "Jupiter", "Uranus", "Neptune": print("Jovian planet")
+      default : print("Unknown planet")
+    }
 }
 
 //new function
@@ -130,4 +133,4 @@ func generators(powerOutage: Bool, state: inout String ) -> Void {
 }
 generators(powerOutage: true,        state: &currentGeneratorState)
 
-print(currentGeneratorState)
+findPlanet()
