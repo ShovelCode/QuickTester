@@ -7,6 +7,9 @@
 
 import Foundation
 
+func introduce() -> Void {
+    
+
 var greeting1 = "Hello world!"
 var greeting2 = "I second that greeting!"
 var greeting3 = "Third!"
@@ -22,7 +25,7 @@ if isLoggedIn {
 
 //ternary operator
 isLoggedIn ? print("Logged in") : print("logged off")
-
+} // end of func?
 
 //make into a function
 var secretIdentity = "Tony Stark"
@@ -133,4 +136,5 @@ func generators(powerOutage: Bool, state: inout String ) -> Void {
 }
 generators(powerOutage: true,        state: &currentGeneratorState)
 
-findPlanet()
+//findPlanet()
+introduce()
