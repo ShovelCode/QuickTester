@@ -27,11 +27,9 @@ if isLoggedIn {
 isLoggedIn ? print("Logged in") : print("logged off")
 } // end of func?
 
-//make into a function
+func identify() -> Void {
 var secretIdentity = "Tony Stark"
 var superheroName: String
-
-// Write your code below
 
 switch secretIdentity {
   case "Tony Stark":
@@ -47,6 +45,7 @@ switch secretIdentity {
 }
 
 print(superheroName)
+}
 
 //new function
 var episode = 8
@@ -137,4 +136,5 @@ func generators(powerOutage: Bool, state: inout String ) -> Void {
 generators(powerOutage: true,        state: &currentGeneratorState)
 
 //findPlanet()
-introduce()
+//introduce()
+identify()
