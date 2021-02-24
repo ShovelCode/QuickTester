@@ -7,6 +7,8 @@
 
 import Foundation
 
+findVillian()
+
 func introduce() -> Void {
     
     var greeting1 = "Hello world!"
@@ -29,41 +31,38 @@ func introduce() -> Void {
 } // end of func?
 
 func identify() -> Void {
-var secretIdentity = "Tony Stark"
-var superheroName: String
+    var secretIdentity = "Tony Stark"
+    var superheroName: String
 
-switch secretIdentity {
-  case "Tony Stark":
-    superheroName = "Iron Man"
-  case "Natasha Romanoff":
-    superheroName = "Black Widow"
-  case "Prince T'Challa":
-    superheroName = "Black Panther"
-  case "Thor":
-    superheroName = "Thor"
-  default:
-    superheroName = "Unknown"
+    switch secretIdentity {
+      case "Tony Stark":
+        superheroName = "Iron Man"
+      case "Natasha Romanoff":
+        superheroName = "Black Widow"
+      case "Prince T'Challa":
+        superheroName = "Black Panther"
+      case "Thor":
+        superheroName = "Thor"
+      default:
+        superheroName = "Unknown"
+    }
+    
 }
+func findVillian() -> Void {
+    
+    var episode = 8
+    var villain: String
 
-print(superheroName)
+
+    switch episode{
+     case 1...3 : villain = "Emperor Palpatine"
+     case 4...6 : villain = "Darth Vader"
+     case 7...9 : villain = "Kylo Ren"
+      default: villain = ""
+    }
+
+    print(villain)
 }
-
-//new function
-var episode = 8
-var villain: String
-
-// Write your code below 🦹
-
-switch episode{
- case 1...3 : villain = "Emperor Palpatine"
- case 4...6 : villain = "Darth Vader"
- case 7...9 : villain = "Kylo Ren"
-  default: villain = ""
-}
-
-print(villain)
-
-//new function
 
 func findPlanet() -> Void {
 var planet = "Earth"
@@ -136,9 +135,7 @@ func generators(powerOutage: Bool, state: inout String ) -> Void {
 }
 generators(powerOutage: true,        state: &currentGeneratorState)
 
-//findPlanet()
-introduce()
-identify()
+
 
 struct Book {
   var pages = 0
@@ -153,3 +150,7 @@ myFavBook.pages = 640
 print(myFavBook.pages)
 myFavBook.title = "Object Oriented Ontology"
 print(myFavBook.title)
+
+//findPlanet()
+//introduce()
+//identify()
