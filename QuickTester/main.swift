@@ -9,22 +9,23 @@ import Foundation
 
 func introduce() -> Void {
     
+    var greeting1 = "Hello world!"
+    var greeting2 = "I second that greeting!"
+    var greeting3 = "Third!"
+    var isLoggedIn = true
 
-var greeting1 = "Hello world!"
-var greeting2 = "I second that greeting!"
-var greeting3 = "Third!"
-var isLoggedIn = true
+    print(greeting1 + " " + greeting2 + " " + greeting3)
 
-print(greeting1 + " " + greeting2 + " " + greeting3)
+    if isLoggedIn {
+        print("Logged in.")
+    } else {
+        print("Logged off.")
+    }
 
-if isLoggedIn {
-    print("Logged in.")
-} else {
-    print("Logged off.")
-}
+    //ternary operator
+    isLoggedIn ? print("Logged in") : print("logged off")
 
-//ternary operator
-isLoggedIn ? print("Logged in") : print("logged off")
+
 } // end of func?
 
 func identify() -> Void {
@@ -136,7 +137,7 @@ func generators(powerOutage: Bool, state: inout String ) -> Void {
 generators(powerOutage: true,        state: &currentGeneratorState)
 
 //findPlanet()
-//introduce()
+introduce()
 identify()
 
 struct Book {
@@ -146,7 +147,7 @@ struct Book {
 
 var myFavBook = Book()
 
-// Write your code below: 📚
+
 print(myFavBook.pages)
 myFavBook.pages = 640
 print(myFavBook.pages)
