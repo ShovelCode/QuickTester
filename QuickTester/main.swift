@@ -8,6 +8,7 @@
 import Foundation
 
 findVillian()
+print(findBMI())
 
 func introduce() -> Void {
     
@@ -108,7 +109,7 @@ func runNums() -> Void {
     }
 }
 
-// Write your code below 💪
+
 func findBMI() -> Double {
     var weight: Double = 70.0 //kg
     var height: Double = 2//meters
@@ -154,3 +155,21 @@ print(myFavBook.title)
 //findPlanet()
 //introduce()
 //identify()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
