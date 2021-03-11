@@ -3,19 +3,16 @@
 //  QuickTester
 //
 //  Created by Christopher Ray on 1/7/21.
-//
+// Last updated: Wednesday 10 March 2021
 
 import Foundation
 
-findVillian()
-print(findBMI())
-
 func introduce() -> Void {
     
-    var greeting1 = "Hello world!"
-    var greeting2 = "I second that greeting!"
-    var greeting3 = "Third!"
-    var isLoggedIn = true
+    let greeting1 = "Hello world!"
+    let greeting2 = "I second that greeting!"
+    let greeting3 = "Third!"
+    let isLoggedIn = true
 
     print(greeting1 + " " + greeting2 + " " + greeting3)
 
@@ -32,7 +29,7 @@ func introduce() -> Void {
 } // end of func?
 
 func identify() -> Void {
-    var secretIdentity = "Tony Stark"
+    let secretIdentity = "Tony Stark"
     var superheroName: String
 
     switch secretIdentity {
@@ -51,7 +48,7 @@ func identify() -> Void {
 }
 func findVillian() -> Void {
     
-    var episode = 8
+    let episode = 8
     var villain: String
 
 
@@ -66,7 +63,7 @@ func findVillian() -> Void {
 }
 
 func findPlanet() -> Void {
-var planet = "Earth"
+    let planet = "Earth"
 
     switch planet {
       case "Earth", "Mercury", "Venus", "Mars" : print("Terrestrial Planet")
@@ -111,8 +108,8 @@ func runNums() -> Void {
 
 
 func findBMI() -> Double {
-    var weight: Double = 70.0 //kg
-    var height: Double = 2//meters
+    let weight: Double = 70.0 //kg
+    let height: Double = 2//meters
   return weight/(height*height)
 }
 
@@ -151,25 +148,3 @@ myFavBook.pages = 640
 print(myFavBook.pages)
 myFavBook.title = "Object Oriented Ontology"
 print(myFavBook.title)
-
-//findPlanet()
-//introduce()
-//identify()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
